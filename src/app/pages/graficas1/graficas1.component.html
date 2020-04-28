@@ -1,1 +1,58 @@
-<p>graficas1 works!</p>
+<!-- <div class="row">
+  <div class="col-6" *ngFor="let grafico of graficosArray">
+    <div class="card">
+      <div class="card-body">
+          <ng-container *ngIf="grafico.graficoObject.type==='doughnut'">
+            <h4 class="card-title">{{grafico.leyenda}}</h4>
+            <app-grafico-donut [infoGrafico]="grafico"></app-grafico-donut>
+          </ng-container>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+<div class="row">
+  <div class="col-6">
+    <div class="card">
+      <div class="card-body">
+        <ng-container *ngIf="graficos.grafico1.type==='doughnut'">
+          <h4 class="card-title">{{graficos.grafico1.leyenda}}</h4>
+          <app-grafico-donut [infoGrafico]="graficos.grafico1"></app-grafico-donut>
+        </ng-container>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-6">
+    <div class="card">
+      <div class="card-body">
+        <ng-container *ngIf="graficos.grafico2.type==='doughnut'">
+          <h4 class="card-title">{{graficos.grafico2.leyenda}}</h4>
+          <app-grafico-donut [infoGrafico]="graficos.grafico2"></app-grafico-donut>
+        </ng-container>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-6">
+    <div class="card">
+      <div class="card-body">
+        <ng-container *ngIf="graficos.grafico3.type==='doughnut'">
+          <h4 class="card-title">{{graficos.grafico3.leyenda}}</h4>
+          <app-grafico-donut [infoGrafico]="graficos.grafico3"></app-grafico-donut>
+        </ng-container>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-6">
+    <div class="card">
+      <div class="card-body">
+        <ng-container *ngIf="graficos.grafico4.type==='doughnut'">
+          <h4 class="card-title">{{graficos.grafico4.leyenda}}</h4>
+          <app-grafico-donut [infoGrafico]="graficos.grafico4"></app-grafico-donut>
+        </ng-container>
+      </div>
+    </div>
+  </div>
+</div>

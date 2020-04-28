@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Event } from '@angular/router';
 
 @Component({
   selector: 'app-progress',
@@ -7,9 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProgressComponent implements OnInit {
 
+  porcBarra1: number = 50;
+  porcBarra2: number = 25;
+
   constructor() { }
 
   ngOnInit(): void {
   }
-
 }
