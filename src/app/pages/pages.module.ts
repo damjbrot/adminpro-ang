@@ -23,6 +23,8 @@ import { PAGES_ROUTES } from './pages.routes';
 // temporal
 import { IncrementadorComponent } from '../components/incrementador/incrementador.component';
 import { GraficoDonutComponent } from '../components/grafico-donut/grafico-donut.component';
+import { PromesasComponent } from './promesas/promesas.component';
+import { RxjsComponent } from './rxjs/rxjs.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,9 @@ import { GraficoDonutComponent } from '../components/grafico-donut/grafico-donut
     PagesComponent,
     IncrementadorComponent,
     GraficoDonutComponent,
-    AccountSettingsComponent
+    AccountSettingsComponent,
+    PromesasComponent,
+    RxjsComponent
   ],
   imports: [
     CommonModule,
